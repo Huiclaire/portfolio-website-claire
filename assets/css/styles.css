@@ -497,9 +497,10 @@ body.dark-theme {
 }
 
 .projects__img{
-  width: 250px;
+  height: 320px;
   border-radius: .75rem;
   margin-bottom: 1.25rem;
+  object-fit: cover;
 }
 
 .projects__subtitle{
@@ -513,12 +514,26 @@ body.dark-theme {
   margin: .5rem 0 1.25rem;
 }
 
+.projects__info{
+  font-size: var(--small-font-size);
+  margin-bottom: 1.25rem;
+  margin-top: 1.25rem;
+  /* margin: .5rem 0 1.25rem; */
+}
+
+.projects__stack{
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+  font-weight: bold;
+}
+
 .projects__button{
   display: inline-flex;
   align-items: center;
   column-gap: .5rem;
   color: var(--small-font-size);
   font-size: var(--small-font-size);
+  text-decoration: none;
 }
 
 .projects__button i{
