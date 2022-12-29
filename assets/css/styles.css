@@ -58,17 +58,17 @@
 }
 
 /*=============== BASE ===============*/
-* {
+*{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-html {
+html{
   scroll-behavior: smooth;
 }
 
-body {
+body{
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
@@ -76,21 +76,21 @@ body {
   transition: background .4s; /* for dark mode animation */
 }
 
-h1, h2, h3 {
+h1, h2, h3{
   color: var(--title-color);
   font-family: var(--title-font);
   font-weight: var(--font-medium);
 }
 
-ul {
+ul{
   list-style: none;
 }
 
-a {
+a{
   text-decoration: none;
 }
 
-img {
+img{
   max-width: 100%;
   height: auto;
 }
@@ -113,44 +113,44 @@ body.dark-theme {
 
 
 /*=============== REUSABLE CSS CLASSES ===============*/
-.container {
+.container{
   max-width: 1024px;
   margin-inline: 1.5rem;
 }
 
-.grid {
+.grid{
   display: grid;
   gap: 1.5rem;
 }
 
-.section {
+.section{
   padding-block: 2.5rem;
 }
 
-.section__border {
+.section__border{
   border-bottom: 1px solid var(--title-color);
   padding-bottom: 3.5rem;
 }
 
 .section__title,
-.section__subtitle {
+.section__subtitle{
   text-align: center;
 }
 
-.section__title {
+.section__title{
   font-size: var(--h1-font-size);
   font-weight: var(--font-semi-bold);
   margin-bottom: .25rem;
 }
 
-.section__subtitle {
+.section__subtitle{
   display: block;
   font-size: var(--small-font-size);
   color: var(--text-color-light);
   margin-bottom: 3rem;
 }
 
-.main {
+.main{
   overflow: hidden; /* For animation */
 }
 
@@ -163,7 +163,7 @@ body.dark-theme {
   z-index: var(--z-fixed);
 }
 
-.nav {
+.nav{
   height: calc(var(--header-height) + .5rem);
   display: flex;
   justify-content: space-between;
@@ -176,8 +176,8 @@ body.dark-theme {
 
 .nav__logo,
 .nav__toggle,
-.nav__close {
-  color: var(--text-color);
+.nav__close{
+  color: var(--title-color);
 }
 
 .nav__logo{
@@ -188,8 +188,9 @@ body.dark-theme {
 .nav__toggle{
   display: flex;
   font-size: 1.25rem;
-  cursor: pointer; /* change mouse shape */
+  cursor: pointer;
 }
+
 
 @media screen and (max-width: 1023px){
   .nav__menu{
@@ -208,7 +209,7 @@ body.dark-theme {
 }
 
 .nav__list{
-  grid-template-columns: repeat(2, max-content);
+  grid-template-columns: repeat(3, max-content);
   justify-content: center;
   gap: 2rem 3rem;
 }
@@ -217,15 +218,17 @@ body.dark-theme {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: .23rem;
+  row-gap: .25rem;
   font-size:  var(--small-font-size);
   color: var(--text-color-light);
   transition: color .3s;
 }
 
+
 .nav__link:hover{
   color: var(--title-color);
 }
+
 
 .nav__link i{
   font-size: 1.25rem;
@@ -497,7 +500,7 @@ body.dark-theme {
 }
 
 .projects__img{
-  height: 320px;
+  height: 280px;
   border-radius: .75rem;
   margin-bottom: 1.25rem;
   object-fit: cover;
