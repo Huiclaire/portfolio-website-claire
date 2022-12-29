@@ -96,13 +96,24 @@ img{
 }
 
 /*=============== THEME ===============*/
+.nav_buttons{
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+}
 
+.change-theme{
+  font-size: 1.25rem;
+  color: var(--title-color);
+  cursor: pointer;
+  transition: color .3s;
+}
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
   --title-color: hsl(207, 4%, 95%);
   --text-color: hsl(207, 4%, 65%);
-  --body-color: hsl(207, 4%, 10%);
+  --body-color: hsl(207, 8%, 10%);
   --container-color: hsl(207, 4%, 12%);
 }
 
@@ -110,6 +121,39 @@ body.dark-theme {
     Color changes in some parts of
     the website, in light theme
 ==========*/
+.dark-theme .nav,
+.dark-theme .nav__menu,
+.dark-theme.scrollup{
+  background-color: var(--container-color);
+  box-shadow: 0 4px 20px hsla(207, 24%, 8%, .4);
+}
+
+.dark-theme .home__shape-wawes,
+.dark-theme .home__shape-circle,
+.dark-theme .qualfication__img,
+.dark-theme .testmonial__img{
+  filter: invert(1);
+}
+
+.dark-theme .home__social-link{
+  color: var(--title-color);
+}
+
+.dark-theme .section__border{
+  border-bottom: 1px solid hsl(207, 4%, 32%);
+}
+
+.dark-theme::webkit-scollbar{
+  background-color: hsl(207, 4%, 15%);
+}
+
+.dark-theme::webkit-scollbar-thumb{
+  background-color: hsl(207, 4%, 25%);
+}
+
+.dark-theme::webkit-scollbar-thumb:hover{
+  background-color: hsl(207, 4%, 35%);
+}
 
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -171,7 +215,8 @@ body.dark-theme {
   background-color: var(--body-color);
   box-shadow: 0 4px 20px hsla(207, 24%, 35%, .1);
   padding-inline: 1.5rem;
-  border-radius: 3rem;
+  border-radius: 25px;
+  transition: background .8s; /*For dark mode animation*/
 }
 
 .nav__logo,
@@ -278,6 +323,7 @@ body.dark-theme {
   justify-self: center;
   border-radius: 6.25rem;
   place-items: center;
+  transition: background .8s; /* For dark mode animation */
 }
 
 .home__perfil{
@@ -397,6 +443,7 @@ body.dark-theme {
   border-radius: 3rem;
   place-items: center;
   margin-bottom: 1rem;
+  transition: background .8s; /* For dark mode animation */
 }
 
 .skills__blob img{
@@ -766,6 +813,7 @@ body.dark-theme {
   font-size: var(--smaller-font-size);
   font-weight: var(--font-medium);
   padding: .35rem;
+  transition: background .8s; /* For dark mode animation */
 }
 
 .contact__form-area{
@@ -779,11 +827,11 @@ body.dark-theme {
 .contact__form .contact__button{
   border: none;
   background: none;
-  font-size: var(--h2-font-size);
+  font-size: var(--small-font-size);
   font-family: var(--title-font);
   cursor: pointer;
   outline: none;
-  margin-top: .75rem;
+  /* margin-top: .10rem; */
 }
 
 .contact__form .contact__button i{
