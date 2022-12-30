@@ -545,14 +545,15 @@ body.dark-theme {
 
 .projects__content{
   display: grid;
+  grid-template-columns: repeat(1, 320px);
   justify-content: center;
 }
 
 .projects__img{
-  height: 280px;
+  width: 320px;
   border-radius: .75rem;
   margin-bottom: 1.25rem;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 .projects__subtitle{
