@@ -1227,6 +1227,7 @@ body.dark-theme {
 
     .skills__info{
       gap: 3rem;
+      grid-template-columns: repeat(3, 1fr);
     }
 
     .qualification__container{
@@ -1271,6 +1272,8 @@ body.dark-theme {
     .projects__img{
       width: 320px;
       margin-bottom: 2rem;
+      height: 213px;
+      object-fit: cover;
     }
 
     .testimonial__container{
