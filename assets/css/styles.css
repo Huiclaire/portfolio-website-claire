@@ -687,19 +687,19 @@ body.dark-theme {
 }
 
 .testimonial__description{
-  font-family: var(--normal-font-size);
+  font-size: var(--body-font);
   color: var(--title-color);
   margin-bottom: 1.5rem;
 }
 
 .testimonial__name{
-  font-family: var(--h2-font-size);
+  font-size: var(--h3-font-size) !important;
   font-size: var(--small-font-size);
   margin-bottom: .25rem;
 }
 
 .testimonial__subtitle{
-  font-size: var(--title-font);
+  font-size: var(--body-font);
   color: var(--text-color-light);
 }
 
