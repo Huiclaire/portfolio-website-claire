@@ -17,7 +17,7 @@
   /* Change the first number */
   /* Blue: 207 - Purple: 250 - Pink: 356 - Teal: 174 */
   --gradient-color: linear-gradient(180deg,
-                      hsla(207, 48%, 72%, 0),
+                      hsla(123, 48%, 72%, 0),
                       rgb(123, 139, 151));
 
   /*========== Font and typography ==========*/
@@ -954,7 +954,7 @@ body.dark-theme {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 340px){
+@media screen and (min-width: 340px){
   .container{
     margin-inline: 1rem;
   }
@@ -1096,6 +1096,7 @@ body.dark-theme {
   .nav__list{
     display: flex;
     column-gap: 3rem;
+    margin-top: 78px;
   }
 
   .nav__link{
