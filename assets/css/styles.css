@@ -863,7 +863,7 @@ body.dark-theme {
 }
 
 .footer__title{
-  font-size: var(--h1-font-size);
+  font-size: var(--h3-font-size);
   font-weight: var(--font-semi-bold);
   margin-bottom: 1rem;
   color: var(--text-color);
@@ -878,6 +878,7 @@ body.dark-theme {
 .footer__list{
   margin: 2.5rem 0;
   column-gap: 2.5rem;
+  font-size: small;
 }
 
 .footer__link{
@@ -893,7 +894,7 @@ body.dark-theme {
 }
 
 .footer__social-link{
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: var(--text-color);
   transition: transform .3s;
 }
