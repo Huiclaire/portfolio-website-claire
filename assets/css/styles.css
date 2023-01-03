@@ -547,13 +547,14 @@ body.dark-theme {
   display: grid;
   grid-template-columns: repeat(1, 320px);
   justify-content: center;
+  margin-right: 0px !important;
 }
 
 .projects__img{
-  width: 320px;
+  width: 100% !important;
   border-radius: .75rem;
   margin-bottom: 1.25rem;
-  /* object-fit: cover; */
+  object-fit: cover;
 }
 
 .projects__subtitle{
@@ -642,7 +643,7 @@ body.dark-theme {
 }
 
 /*=============== TESTIMONIAL ===============*/
-.testimonial{
+/* .testimonial{
   position: relative;
 }
 
@@ -669,6 +670,41 @@ body.dark-theme {
 
 .testmonial__img{
   width: 70px;
+  transform: rotate(30deg);
+  position: absolute;
+  top: 5rem;
+  right: -1.5rem;
+  opacity: .1;
+} */
+/*=============== NEW PROJECTS ===============*/
+
+.testimonial{
+  position: relative;
+}
+
+.testimonial__content{
+  text-align: center;
+}
+
+.testimonial__description{
+  font-family: var(--normal-font-size);
+  color: var(--title-color);
+  margin-bottom: 1.5rem;
+}
+
+.testimonial__name{
+  font-family: var(--h2-font-size);
+  font-size: var(--small-font-size);
+  margin-bottom: .25rem;
+}
+
+.testimonial__subtitle{
+  font-size: var(--title-font);
+  color: var(--text-color-light);
+}
+
+.testimonial__img{
+  width: 160px;
   transform: rotate(30deg);
   position: absolute;
   top: 5rem;
@@ -952,6 +988,8 @@ body.dark-theme {
   bottom: 7.5rem;
 }
 
+
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (min-width: 340px){
@@ -959,9 +997,6 @@ body.dark-theme {
     margin-inline: 1rem;
   }
 
-  .nav__menu{
-    padding-bottom: 4rem;
-  }
 
   .nav__list{
     gap: 1rem 1.25rem;
@@ -1096,7 +1131,6 @@ body.dark-theme {
   .nav__list{
     display: flex;
     column-gap: 3rem;
-    margin-top: 78px;
   }
 
   .nav__link{
