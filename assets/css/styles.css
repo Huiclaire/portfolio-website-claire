@@ -1159,15 +1159,21 @@ body.dark-theme {
     }
 
     .home__blob{
-      width: 330px;
+      /* width: 330px;
       height: 500px;
-      border-radius: 12.5rem;
+      border-radius: 12.5rem; */
+      width: 316px;
+      height: 448px;
+      border-radius: 8.6rem;
     }
 
     .home__perfil{
-      width: 280px;
+      /* width: 280px;
       height: 440px;
-      border-radius: 10.6rem;
+      border-radius: 10.6rem; */
+      width: 272px;
+      height: 392px;
+      border-radius: 6.6rem;
     }
 
     .home__perfil img{
@@ -1201,7 +1207,6 @@ body.dark-theme {
     .home__info{
       grid-template-rows: repeat(3, 130px);
       row-gap: 4rem;
-      margin-top: 16rem;
     }
 
     .skills__container{
