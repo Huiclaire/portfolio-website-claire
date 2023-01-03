@@ -607,7 +607,7 @@ body.dark-theme {
 
 .projects__container .swiper-button-prev,
 .projects__container .swiper-button-next{
-  width: initial;
+  width: fit-content;
   height: initial;
   margin: initial;
   font-size: 2.5rem;
@@ -1153,7 +1153,7 @@ body.dark-theme {
     }
 
     .section__subtitle{
-      margin-bottom: 5rem ;
+      margin-bottom: 4rem ;
       margin-top: 1.25rem;
     }
 
@@ -1289,7 +1289,7 @@ body.dark-theme {
     }
 
     .testimonial__description{
-      font-size: var(--h2-font-size);
+      font-size: var(--body-font);
       margin-bottom: 2rem;
     }
 
