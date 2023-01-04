@@ -588,6 +588,7 @@ body.dark-theme {
   color: var(--small-font-size);
   font-size: var(--small-font-size);
   text-decoration: none;
+  margin-bottom: 1rem;
 }
 
 .projects__button i{
@@ -1007,9 +1008,9 @@ body.dark-theme {
 
   .projects__img,
   .projects__content{
-    width: 200px;
+    width: 280px !important;
     justify-self: center;
-    display: block;
+    display: initial;
   }
 
   .projects__container,
@@ -1305,7 +1306,6 @@ body.dark-theme {
     .projects__img{
       width: 320px;
       margin-bottom: 2rem;
-      height: 213px;
       object-fit: cover;
     }
 
