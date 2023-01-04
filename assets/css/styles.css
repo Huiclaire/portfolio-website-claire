@@ -540,7 +540,7 @@ body.dark-theme {
 
 /*=============== PROJECTS ===============*/
 .projects__container{
-  overflow: inherit;
+  overflow: initial;
 }
 
 .projects__content{
@@ -572,7 +572,7 @@ body.dark-theme {
   font-size: var(--small-font-size);
   margin-bottom: 1.25rem;
   margin-top: 1.25rem;
-  /* margin: .5rem 0 1.25rem; */
+  margin: .5rem 0 1.25rem;
 }
 
 .projects__stack{
@@ -598,7 +598,6 @@ body.dark-theme {
 .projects__button:hover i{
   transform: translateX(.25rem);
 }
-
 
 /* Swiper class */
 .projects__container .swiper-button-prev::after,
@@ -729,7 +728,7 @@ body.dark-theme {
   width: initial;
   height: initial;
   top: initial;
-  bottom: .5rem;
+  bottom: 2.5rem;
 }
 
 .testimonial__container .swiper-button-prev{

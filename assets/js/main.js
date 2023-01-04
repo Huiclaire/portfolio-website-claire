@@ -32,7 +32,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 /*=============== SWIPER PROJECTS ===============*/
 let swiperProjects = new Swiper(".projects__container", {
   loop: true,
-  spaceBetween: 24,
+  spaceBetween: 100,
 
 
   navigation: {
@@ -42,6 +42,8 @@ let swiperProjects = new Swiper(".projects__container", {
   pagination: {
     el: ".swiper-pagination",
   },
+  mousewheel: true,
+  keyboard: true,
   breakpoints: {
     1200: {
       slidesPerView: 2,
@@ -58,6 +60,8 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  mousewheel: true,
+  keyboard: true,
 });
 
 /*=============== EMAIL JS ===============*/
