@@ -1,24 +1,24 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
-
+@import "font-awesome";
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(207, 65%, 65%);
-  --title-color: hsl(207, 4%, 16%);
-  --text-color: hsl(207, 4%, 28%);
-  --text-color-light: hsl(207, 4%, 56%);
-  --body-color: hsl(207, 4%, 99%);
-  --container-color: hsl(207, 4%, 95%);
+  --first-color: hsl(27, 22.2%, 64.7%);
+  --title-color: hsl(27, 4%, 16%);
+  --text-color: hsl(27, 4%, 28%);
+  --text-color-light: hsl(27, 4%, 56%);
+  --body-color: hsl(27, 4%, 99%);
+  --container-color: hsl(27, 4%, 95%);
 
   /* Change the first number */
   /* Blue: 207 - Purple: 250 - Pink: 356 - Teal: 174 */
   --gradient-color: linear-gradient(180deg,
-                      hsla(123, 48%, 72%, 0),
-                      rgb(123, 139, 151));
+                      hsla(27, 48%, 72%, 0),
+                      rgb(185, 163, 145));
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -164,7 +164,8 @@ body.dark-theme {
 
 .grid{
   display: grid;
-  gap: 1.5rem;
+  /* gap: 1.5rem; */
+  gap: 1.25rem;
 }
 
 .section{
@@ -297,15 +298,38 @@ body.dark-theme {
   color: var(--title-color);
 }
 
-/*=============== HOME ===============*/
+/*=============== NEW HOME ===============*/
 .home__container{
-  row-gap: 4rem;
+  position: relative;
+  row-gap: 4.5rem;
   padding-top: 2rem;
 }
 
 .home__data{
-  row-gap: 1.5rem;
+  text-align: center;
 }
+
+.home__greeting,
+.home__education{
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+}
+
+.home__greeting{
+  display: block;
+  color: var(--title-color);
+  margin-bottom: .25rem;
+}
+
+.home__education{
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.home__name{
+  font-size: var(--biggest-font-size);
+}
+
 
 .home__title{
   text-align: center;
@@ -316,19 +340,21 @@ body.dark-theme {
 
 .home__blob{
   position: relative;
-  width: 200px;
-  height: 290px;
+  width: 216px;
+  height: 324px;
   background-color: var(--body-color);
-  border: 2px solid var(--text-color-light);
+  border: 2px solid var(--gradient-color);
   justify-self: center;
   border-radius: 6.25rem;
   place-items: center;
-  transition: background .8s; /* For dark mode animation */
+  transition: background .8s;
+  /* For dark mode animation */
 }
 
+
 .home__perfil{
-  width: 170px;
-  height: 260px;
+  width: 204px;
+  height: 308px;
   background: var(--gradient-color);
   border-radius: 5.5rem;
   overflow: hidden;
@@ -337,6 +363,193 @@ body.dark-theme {
   align-items: flex-end;
 }
 
+.home__img{
+  width: 188px;
+}
+
+.home__scroll{
+  color: var(--first-color);
+  right: -1.5rem;
+  bottom: 4rem;
+  row-gap: 2rem;
+  justify-content: center;
+  position: absolute;
+  display: grid;
+}
+
+.home__scroll-icon{
+  font-size: 1.25rem;
+}
+
+.home__scroll-name{
+  font-size: var(--smaller-font-size);
+  transform: rotate(-90deg);
+}
+
+.home__buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.home__social{
+  position: absolute;
+  bottom: 5rem;
+  left: 0;
+  display: grid;
+  row-gap: .5rem;
+}
+
+.home__social-link{
+  font-size: 1.25rem;
+  color: var(--first-color);
+  transition: color .3s;
+  width: max-content;
+  background-color: var(--container-color);
+  padding: .25rem;
+  border-radius: .75rem;
+  display: flex;
+  font-size: 1rem;
+}
+
+.home__social-link:hover{
+  color: #fff;
+  background-color: var(--first-color);
+}
+
+.home__social::after{
+  content: '';
+  width: 32px;
+  height: 2px;
+  background-color: var(--first-color);
+  transform: rotate(90deg) translate(16px, 2px);
+}
+
+/*=============== BUTTONS ===============*/
+.button{
+  display: inline-block;
+  background-color: var(--first-color);
+  color: var(--body-color);
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: var(--font-medium);
+  transform: .4s;
+}
+
+.button:hover {
+  opacity: 1;
+  color: var(--body-color);
+  background-color: var(--first-color);
+}
+
+.button--ghost{
+  background-color: transparent;
+  border: 2px solid var(--first-color);
+  color: var(--first-color)
+}
+/*
+.home__shape-wawes,
+.home__shape-circle{
+  position: absolute;
+  opacity: .1;
+}
+
+.home__shape-wawes{
+  width: 50px;
+  left: -1.5rem;
+  top: 5rem;
+}
+
+.home__shape-circle{
+  width: 150px;
+  bottom: -2rem;
+  right: -3rem;
+  transform: rotate(15deg);
+  z-index: -1;
+}
+
+
+
+.home__info{
+  display: grid;
+  row-gap: 2rem;
+}
+
+.home__info-title{
+  font-family: var(--body-font);
+  font-size: var(--smaller-font-size);
+  font-weight: 400;
+  color: var(--text-color-light);
+  margin-bottom: 1rem;
+}
+
+.home__info-description,
+.home__info-number{
+  font-family: var(--title-font);
+  color: var(--title-color);
+}
+
+.home__info-description{
+  padding-right: 4rem;
+}
+
+.home__info-number{
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-semi-bold);
+} */
+
+/*
+.home__shape-wawes,
+.home__shape-circle{
+  position: absolute;
+  opacity: .1;
+}
+
+.home__shape-wawes{
+  width: 50px;
+  left: -1.5rem;
+  top: 5rem;
+}
+
+.home__shape-circle{
+  width: 150px;
+  bottom: -2rem;
+  right: -3rem;
+  transform: rotate(15deg);
+  z-index: -1;
+}
+
+
+.home__info{
+  display: grid;
+  row-gap: 2rem;
+}
+
+.home__info-title{
+  font-family: var(--body-font);
+  font-size: var(--smaller-font-size);
+  font-weight: 400;
+  color: var(--text-color-light);
+  margin-bottom: 1rem;
+}
+
+.home__info-description,
+.home__info-number{
+  font-family: var(--title-font);
+  color: var(--title-color);
+}
+
+.home__info-description{
+  padding-right: 4rem;
+}
+
+.home__info-number{
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-semi-bold);
+} */
+/*=============== HOME ===============*/
+/*
 .home__shape-wawes,
 .home__shape-circle{
   position: absolute;
@@ -399,7 +612,72 @@ body.dark-theme {
 .home__info-number{
   font-size: var(--h1-font-size);
   font-weight: var(--font-semi-bold);
+} */
+
+/*
+.home__shape-wawes,
+.home__shape-circle{
+  position: absolute;
+  opacity: .1;
 }
+
+.home__shape-wawes{
+  width: 50px;
+  left: -1.5rem;
+  top: 5rem;
+}
+
+.home__shape-circle{
+  width: 150px;
+  bottom: -2rem;
+  right: -3rem;
+  transform: rotate(15deg);
+  z-index: -1;
+}
+
+.home__social{
+  justify-self: center;
+  display: flex;
+  column-gap: 1.25rem;
+}
+
+.home__social-link{
+  font-size: 1.25rem;
+  color: var(--text-color-light);
+  transition: color .3s;
+}
+
+.home__social-link:hover{
+  color: var(--title-color);
+}
+
+.home__info{
+  display: grid;
+  row-gap: 2rem;
+}
+
+.home__info-title{
+  font-family: var(--body-font);
+  font-size: var(--smaller-font-size);
+  font-weight: 400;
+  color: var(--text-color-light);
+  margin-bottom: 1rem;
+}
+
+.home__info-description,
+.home__info-number{
+  font-family: var(--title-font);
+  color: var(--title-color);
+}
+
+.home__info-description{
+  padding-right: 4rem;
+}
+
+.home__info-number{
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-semi-bold);
+} */
 /*=============== SKILLS ===============*/
 .skills__container{
   row-gap: 3.5rem;
@@ -1031,6 +1309,10 @@ body.dark-theme {
 
   .skills__container{
     justify-content: center;
+  }
+
+  .skills__info{
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .testimonial__container{

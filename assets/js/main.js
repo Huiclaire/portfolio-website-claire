@@ -60,7 +60,7 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  mousewheel: true,
+  // mousewheel: true,
   keyboard: true,
 });
 
