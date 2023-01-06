@@ -469,14 +469,24 @@ body.dark-theme {
   color: var(--first-color)
 }
 /*=============== ABOUT ===============*/
-.about__container{
-  row-gap: 2.5rem;
-}
-
 .about__img{
-  width: 220px;
+  width: 320px;
   border-radius: 1.5rem;
   justify-self: center;
+}
+
+.about__blob{
+  position: relative;
+  width: 340px;
+  height: 196px;
+  background-color: var(--body-color);
+  border: 2px solid var(--first-color);
+  justify-self: center;
+  border-radius: 1.5rem;
+  place-items: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  transition: background .8s;
+  /* For dark mode animation */
 }
 
 .about__description{
@@ -661,7 +671,7 @@ body.dark-theme {
 .skills__blob{
   width: 80px;
   height: 100px;
-  background-color: var(--container-color);
+  background-color: hsl(27deg 67% 91%);
   border-radius: 3rem;
   place-items: center;
   margin-bottom: 1rem;
@@ -930,6 +940,10 @@ body.dark-theme {
   top: 5rem;
   right: -1.5rem;
   opacity: .1;
+}
+
+.testimonial .button{
+  margin-bottom: 25px;
 }
 
 /* Swiper class */
@@ -1245,6 +1259,15 @@ body.dark-theme {
   .swiper-slide{
     padding-inline: 1.25rem;
   }
+
+  .about__blob{
+    width: 292px;
+    height: 172px;
+  }
+
+  .about__img{
+    width: 268px;
+  }
 }
 
 /* For medium devices */
@@ -1255,6 +1278,9 @@ body.dark-theme {
   }
   .nav{
     margin: 0 auto;
+  }
+  .home__buttons{
+    flex-direction: row;
   }
 
   .skills__container{
