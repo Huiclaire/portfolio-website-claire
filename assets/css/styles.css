@@ -431,10 +431,11 @@ body.dark-theme {
   display: inline-block;
   background-color: var(--first-color);
   color: var(--body-color);
-  padding: 8px 24px;
+  padding: .75rem 1rem;
   border-radius: 50px;
   font-weight: var(--font-medium);
   transform: .4s;
+  justify-self: center;
 }
 
 .button:hover {
@@ -448,106 +449,28 @@ body.dark-theme {
   border: 2px solid var(--first-color);
   color: var(--first-color)
 }
-/*
-.home__shape-wawes,
-.home__shape-circle{
-  position: absolute;
-  opacity: .1;
+/*=============== ABOUT ===============*/
+.about__container{
+  row-gap: 2.5rem;
 }
 
-.home__shape-wawes{
-  width: 50px;
-  left: -1.5rem;
-  top: 5rem;
-}
-
-.home__shape-circle{
-  width: 150px;
-  bottom: -2rem;
-  right: -3rem;
-  transform: rotate(15deg);
-  z-index: -1;
+.about__img{
+  width: 220px;
+  border-radius: 1.5rem;
+  justify-self: center;
 }
 
 
 
-.home__info{
-  display: grid;
-  row-gap: 2rem;
-}
-
-.home__info-title{
-  font-family: var(--body-font);
-  font-size: var(--smaller-font-size);
-  font-weight: 400;
-  color: var(--text-color-light);
-  margin-bottom: 1rem;
-}
-
-.home__info-description,
-.home__info-number{
-  font-family: var(--title-font);
-  color: var(--title-color);
-}
-
-.home__info-description{
-  padding-right: 4rem;
-}
-
-.home__info-number{
-  font-size: var(--h1-font-size);
-  font-weight: var(--font-semi-bold);
-} */
-
-/*
-.home__shape-wawes,
-.home__shape-circle{
-  position: absolute;
-  opacity: .1;
-}
-
-.home__shape-wawes{
-  width: 50px;
-  left: -1.5rem;
-  top: 5rem;
-}
-
-.home__shape-circle{
-  width: 150px;
-  bottom: -2rem;
-  right: -3rem;
-  transform: rotate(15deg);
-  z-index: -1;
-}
 
 
-.home__info{
-  display: grid;
-  row-gap: 2rem;
-}
 
-.home__info-title{
-  font-family: var(--body-font);
-  font-size: var(--smaller-font-size);
-  font-weight: 400;
-  color: var(--text-color-light);
-  margin-bottom: 1rem;
-}
 
-.home__info-description,
-.home__info-number{
-  font-family: var(--title-font);
-  color: var(--title-color);
-}
 
-.home__info-description{
-  padding-right: 4rem;
-}
 
-.home__info-number{
-  font-size: var(--h1-font-size);
-  font-weight: var(--font-semi-bold);
-} */
+
+
+
 /*=============== HOME ===============*/
 /*
 .home__shape-wawes,
