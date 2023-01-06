@@ -113,10 +113,10 @@ img{
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
-  --title-color: hsl(207, 4%, 95%);
-  --text-color: hsl(207, 4%, 65%);
-  --body-color: hsl(207, 8%, 10%);
-  --container-color: hsl(207, 4%, 12%);
+  --title-color: hsl(27, 4%, 95%);
+  --text-color: hsl(27, 4%, 65%);
+  --body-color: hsl(27, 8%, 10%);
+  --container-color: hsl(27, 4%, 12%);
 }
 
 /*==========
@@ -157,6 +157,9 @@ body.dark-theme {
   background-color: hsl(207, 4%, 35%);
 }
 
+.dark-theme h1, h2, h3{
+  color: var(--text-color);
+}
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container{
@@ -319,7 +322,6 @@ body.dark-theme {
 .home__container{
   position: relative;
   row-gap: 4.5rem;
-  padding-top: 2rem;
 }
 
 .home__data{
@@ -478,14 +480,17 @@ body.dark-theme {
 }
 
 .about__description{
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
+.about__description p{
+  margin-bottom: 1rem;
+}
+
+
 .about__description mark{
-  display: inline-block;
-  line-height: 0;
-  padding-bottom: 0.5em;
-  background-color: hsl(27deg 67% 91%);
+  background-color: hsl(27deg 59% 80%);
+  color: var(--text-color);
 }
 /*=============== HOME ===============*/
 /*
@@ -1208,9 +1213,9 @@ body.dark-theme {
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (min-width: 340px){
-  .container{
+  /* .container{
     margin-inline: 1rem;
-  }
+  } */
 
   .nav__list{
     gap: 1rem 1.25rem;
