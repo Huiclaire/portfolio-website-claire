@@ -142,36 +142,32 @@
 
               <div class="about__container container grid section__border">
                 <div class="about__blob grid">
-                  <img src="assets/img/about.png" alt="" class="about__img">
-                </div>
-
-                <div class="about__data">
-                  <div class="about__info">
-                    <h3 class="about__title"></h3>
-                    <span class="about__subtitle"></span>
+                  <div class="about__perfil">
+                    <img src="assets/img/about.png" alt="" class="about__img">
                   </div>
                 </div>
 
-                <p class="about__description">
+                <div class="about__description about__description__container">
+                <p>
                   <mark>hi there - let me introduce myself.</mark><br>
-                  <br>I am a Berlin-based junior full stack developer from Taiwan.
+                  <br>I am a Germnay-based junior full stack developer from Taiwan.
                   After four years of experience in art consulting company as a project
                   manager, then two years of experience in the blockchain industry as a
                   crypto-journalist, I decided to change my career to become a web
-                  developer and learned to code in a Le Wagon bootcamp. <br><br>
+                  developer and learned to code in Le Wagon coding bootcamp. <br><br>
                   I now have a solid understanding of and am fully equipped with
                   all the tools to build modern and responsive web applications.
                   I like to see this as the first step of a much longer journey and I am
                   excited to learn new things and onboard new languages on my way. <br><br>
                   In my professional life, one thing became clear pretty quickly -
-                  I like to put great attention to detail, and I feel satisfiedwhen the
+                  I like to put great attention to detail, and I feel satisfied when the
                   outcome meets my creativity with also more relationship-drive,
                   human-centered design.
                   In my freetime, I enjoy traveling, cycling, surfing, dancing,
                   and occationally gardening.
                 </p>
-
-                <a href="#contact" class="button">Contact Me</a>
+              </div>
+              <a href="#contact" class="button">Contact Me</a>
               </div>
             </section>
 
@@ -572,7 +568,7 @@
                         </p>
                       </div>
 
-                      <a href="#" class="button">
+                      <a href="http://fusiovan.herokuapp.com/" class="button button--ghost">
                         View demo <i class="ri-arrow-right-line"></i>
                       </a>
                     </div>
@@ -598,7 +594,7 @@
                         </p>
                       </div>
 
-                      <a href="#" class="button">
+                      <a href="http://vanish-882.herokuapp.com/" class="button button--ghost">
                         View demo <i class="ri-arrow-right-line"></i>
                       </a>
                     </div>
@@ -620,22 +616,25 @@
                         <br>
                         <p class="testimonial__description">
                           A movie watchlist web app to save your favorite movies,
-                          add them to your lists and also with your reviews.
+                          add them to your lists, and you can also leave a review to both
+                          the movie and the list.
                         </p>
                       </div>
 
-                      <a href="#" class="button">
+                      <a href="mysite-bob1.onrender.com/" class="button button--ghost">
                         View demo <i class="ri-arrow-right-line"></i>
                       </a>
                     </div>
                   </div>
                   <!-- Swiper arrows -->
-                  <div class="swiper-button-next">
+                  <!-- <div class="swiper-button-next">
                     <i class="ri-arrow-right-s-line"></i>
                   </div>
                   <div class="swiper-button-prev">
                     <i class="ri-arrow-left-s-line"></i>
-                  </div>
+                  </div> -->
+                  <!-- Swiper pagination -->
+                  <div class="swiper-pagination"></div>
                 </div>
               </div>
             </section>
@@ -704,16 +703,20 @@
                   </h3>
 
                   <div class="contact__info">
-                    <div class="contact__data">
-                      <span class="contact__data-title">Email</span>
+                    <div class="contact__data contact__card">
+                      <span class="contact__data-title">Email <i class='bx bx-mail-send'></i></span>
                       <span class="contact__data-info">chunhuilin7516@gmail.com</span>
+
+                      <a href="mailto:exempleemail@correo.com" target="_blank" class="contact__button button button--ghost">
+                        Write me <i class="ri-arrow-right-line"></i>
+                      </a>
                     </div>
 
-                    <div class="contact__data">
-                      <span class="contact__data-title">Whatsapp</span>
+                    <div class="contact__data contact__card">
+                      <span class="contact__data-title">Whatsapp <i class='bx bxl-whatsapp'></i></span>
                       <span class="contact__data-info">+886 933519863</span>
                       <!-- Insert a real number plus country code -->
-                      <a href="https://api.whatsapp.com/send?phone=886933519863&text=Hello, more information!" target="_blank" class="contact__button">
+                      <a href="https://api.whatsapp.com/send?phone=886933519863&text=Hello, more information!" target="_blank" class="contact__button button button--ghost">
                         Write me <i class="ri-arrow-right-line"></i>
                       </a>
                     </div>
@@ -722,7 +725,7 @@
 
                 <div class="contact__content">
                   <h3 class="contact__title">
-                    <i class="ri-send-plane-line"></i>Ask me anything!
+                    <i class="ri-send-plane-line"></i>Write me your project
                   </h3>
 
                   <form action="" class="contact__form" id="contact-form">
@@ -743,7 +746,7 @@
 
                     <p class="contact__notice" id="contact-notice"></p>
 
-                    <button type="submit" class="contact__button">
+                    <button type="submit" class="contact__button button button--ghost">
                       Send message <i class="ri-arrow-right-up-line"></i>
                     </button>
                   </form>
