@@ -1040,7 +1040,7 @@ body.dark-theme {
 }
 
 .contact__data{
-  row-gap: .75rem;
+  row-gap: 1.25rem;
   justify-content: flex-start;
 }
 
@@ -1306,6 +1306,13 @@ body.dark-theme {
 
   .about__img{
     width: 268px;
+  }
+
+  .about__description__container{
+    width: 269px;
+    justify-self: center;
+    text-align: center;
+    font-size: 18px;
   }
 }
 
