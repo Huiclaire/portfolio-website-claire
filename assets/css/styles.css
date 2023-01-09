@@ -1160,6 +1160,10 @@ body.dark-theme {
 }
 
 /*=============== FOOTER ===============*/
+.footer{
+  background-color: var(--container-color);
+}
+
 .footer__container{
   padding: 3rem 0 7rem;
   text-align: center;
@@ -1280,7 +1284,7 @@ body.dark-theme {
   .about__description__container{
     width: 440px;
     justify-self: center;
-    text-align: justify;
+    text-align: left;
   }
 
   .skills__info{
@@ -1391,7 +1395,7 @@ body.dark-theme {
 /* For large devices */
 @media screen and (min-width: 992px){
   .section{
-    padding: 3.5rem 0 1rem;
+    padding: 3.5rem 0 0rem;
   }
   .section__title{
     margin-bottom: 1rem;
@@ -1450,6 +1454,9 @@ body.dark-theme {
   }
   .contact__title{
     font-size: var(--normal-font-size);
+  }
+  .footer__social-link{
+    font-size: 1.5rem;
   }
 }
 
@@ -1521,6 +1528,10 @@ body.dark-theme {
 
   .show-scroll{
     bottom: 5rem;
+  }
+
+  .footer__social-link{
+    font-size: 1.25rem;
   }
 
   /* Change background header */
