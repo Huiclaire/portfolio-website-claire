@@ -158,7 +158,11 @@ body.dark-theme {
 }
 
 .dark-theme h1, h2, h3{
-  color: var(--text-color);
+  color: var(--title-color);
+}
+
+.dark-theme .about__description mark{
+  color: var(--body-color);
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -180,6 +184,8 @@ body.dark-theme {
 .section__border{
   border-bottom: 1px solid var(--title-color);
   padding-bottom: 3.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .section__title,
@@ -343,7 +349,6 @@ body.dark-theme {
 
 .home__education{
   color: var(--text-color);
-  margin-bottom: 1rem;
 }
 
 .home__name{
@@ -1284,6 +1289,9 @@ body.dark-theme {
   .about__description__container{
     width: 440px;
     justify-self: center;
+  }
+
+  .about__description p{
     text-align: left;
   }
 
@@ -1328,6 +1336,9 @@ body.dark-theme {
   }
   .nav{
     margin: 0 auto;
+  }
+  .home__education{
+    font-size: var(--h3-font-size);
   }
   .home__buttons{
     flex-direction: row;
@@ -1399,6 +1410,9 @@ body.dark-theme {
   }
   .section__title{
     margin-bottom: 1rem;
+  }
+  .home__education{
+    font-size: var(--h3-font-size);
   }
   .home__blob{
     width: 300px;
@@ -1476,6 +1490,7 @@ body.dark-theme {
     column-gap: 3rem;
     margin-inline: 1.5rem;
     padding: 0;
+    background-color: var(--body-color);
   }
 
   .nav__link i,
@@ -1563,6 +1578,16 @@ body.dark-theme {
       background-color: var(--body-color);
     }
 
+    .about__description p{
+      font-size: var(--normal-font-size) !important;
+      font-family: var(--title-font);
+    }
+
+    .home__greeting{
+      margin-top: 1.25rem;
+      font-size: var(--h3-font-size);
+    }
+
     .home__blob{
       /* width: 330px;
       height: 500px;
@@ -1617,10 +1642,17 @@ body.dark-theme {
       transform: rotate(90deg) translate(16px, -3px);
     }
 
-
     .home__info{
       grid-template-rows: repeat(3, 130px);
       row-gap: 4rem;
+    }
+
+    .about__description{
+      width: 880px;
+    }
+
+    .about__description p{
+      font-size: var(--h3-font-size);
     }
 
     .skills__container{
@@ -1645,7 +1677,7 @@ body.dark-theme {
     }
 
     .qualification__container{
-      column-gap: 14rem;
+      column-gap: 6rem;
     }
 
     .qualification__title i{
@@ -1704,10 +1736,6 @@ body.dark-theme {
 
     .testimonial__container .swiper-button-next{
       right: calc(50% -5rem);
-    }
-
-    .testimonial__container .swiper-slide{
-      margin-bottom: 6rem;
     }
 
     .testimonial__description{
