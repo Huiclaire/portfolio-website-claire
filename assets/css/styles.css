@@ -1579,8 +1579,7 @@ body.dark-theme {
     }
 
     .about__description p{
-      font-size: var(--normal-font-size) !important;
-      font-family: var(--title-font);
+      font-size: 20px !important;
     }
 
     .home__greeting{
