@@ -1578,6 +1578,10 @@ body.dark-theme {
       background-color: var(--body-color);
     }
 
+    .nav__logo{
+      text-shadow: none;
+    }
+
     .about__description p{
       font-size: 20px !important;
     }
@@ -1769,21 +1773,21 @@ body.dark-theme {
     }
 
     .footer__container{
-      padding: 4rem 0 3rem;
+      padding: 2rem 0 1.5rem;
     }
 
     .footer__list{
       column-gap: 3rem;
-      margin: 3rem 0;
+      margin: 2rem 0;
     }
     .footer__social{
       column-gap: 2rem;
     }
     .footer__social-link{
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
     .footer__copy{
-      margin-top: 5rem;
+      margin-top: 1rem;
     }
   }
 }
