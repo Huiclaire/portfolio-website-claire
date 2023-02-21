@@ -1070,6 +1070,7 @@ body.dark-theme {
   font-size: var(--small-font-size);
   text-decoration: none;
   height: 80%;
+  cursor: pointer;
 }
 
 .contact__button i{
