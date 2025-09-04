@@ -477,37 +477,32 @@ body.dark-theme {
   transition: 0.5s;
 }
 /*=============== ABOUT ===============*/
-.about__img{
-  width: 320px;
-  border-radius: 1.5rem;
-  justify-self: center;
-}
-
 .about__blob{
   position: relative;
   width: 340px;
-  height: 196px;
+  height: 220px;
   background-color: var(--body-color);
   border: 2px solid var(--first-color);
-  justify-self: center;
-  border-radius: 1.5rem;
-  place-items: center;
+  border-radius: 2.5rem;
+  overflow: hidden;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   transition: background .8s;
+
+  display: grid;
+  /* align-items: center; */
+  justify-self: center;
+  place-items: center;
   /* For dark mode animation */
+
+}
+.about__img{
+  display: block;
+  max-width: 96%;
+  max-width: 96%;
+  object-fit: contain;
+  border-radius: 2.5rem;
 }
 
-/* can add in the future */
-/* .about__perfil{
-  width: 204px;
-  height: 308px;
-  background: var(--gradient-color);
-  border-radius: 5.5rem;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-} */
 
 .about__description{
   margin-bottom: 1rem;
