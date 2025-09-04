@@ -1,14 +1,22 @@
-# 💼 Responsive Personal Portfolio Website
-## [Watch it on youtube](https://youtu.be/5-_2z-DdWng)
-### 💼 Responsive Personal Portfolio Website
+# 🌐 Claire Lin — Personal Portfolio Website
 
-- Responsive Personal Portfolio Website Design Using HTML CSS & JavaScript
-- Includes a light and dark theme.
-- Contains animations when scrolling.
-- Includes a form to send emails.
-- Developed first with the Mobile First methodology, then for desktop.
-- Compatible with all mobile devices and with a beautiful and pleasant user interface.
+This repository contains the source code for my personal portfolio, built with **HTML, CSS, and JavaScript** and deployed via **GitHub Pages** at [clairelin.me](https://clairelin.me).
 
-💙 Join the channel to see more videos like this. [Bedimcode](https://www.youtube.com/c/Bedimcode)
+## ✨ Features
+- Responsive design (mobile-first and desktop-friendly)  
+- Light & dark theme toggle  
+- Smooth scroll animations  
+- Contact form with email integration  
+- Clean and minimal user interface  
 
-![preview img](/preview.png)
+## 🚀 Deployment
+The site is deployed using **GitHub Pages** with a custom domain:  
+👉 [https://clairelin.me](https://clairelin.me)
+
+## 📂 Sections
+- **About Me** — Short introduction and background  
+- **Projects** — Selected works and open-source contributions  
+- **Contact** — Easy way to get in touch  
+
+## 🙏 Acknowledgments
+This portfolio was inspired by open-source templates such as [Bedimcode](https://github.com/bedimcode) and further customized for my own use.
